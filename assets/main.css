@@ -1,7 +1,10 @@
 *{
   font-family: 'PT Serif', serif;
+  margin: 5px;
+  padding: 10px;
 }
 
 body {
-  background: blue;
+  background: floralwhite;
+
 }
