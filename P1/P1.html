@@ -10,7 +10,67 @@
  
   <style>
 
-  
+  .topleft{
+  width: 0;
+  height: 0;
+  border-top: 40px solid white;
+  border-right: 40px solid transparent;
+  position:absolute;
+  left:60px;
+  top:0px;
+  z-index:10004;
+}
+.middle{
+    width:140px;
+    height:40px;
+    background:#93d0aa;
+    position:absolute;
+    left:101px;
+    top:132px;
+
+  }
+  .rectangletop{
+    width: 140px;
+    height: 40px;
+    background:#93d0aa;
+    position:absolute;
+    left:101px;
+    top:0px;
+  }
+  .rectangleleft{
+    width: 300px;
+    height: 40px;
+    background:#93d0aa;
+    position:absolute;
+    transform:rotate(90deg);
+    left:-69px;
+    top:130px;
+  }
+    #grad1 {
+    height:40px;
+    width:40px;
+    background-color: #93d0aa;
+    background-image: linear-gradient(to left, #93d0aa , #6fa57e);
+    position:absolute;
+    left:101px;
+    top:0px;
+    z-index: 10004;
+  }
+    #grad3 {
+    height:40px;
+    width:40px;
+    background-color: #93d0aa;
+    background-image: linear-gradient(to left, #93d0aa , #6fa57e);
+    position:absolute;
+    left:101px;
+    top:132px;
+    z-index: 10004;
+  }
+  #F{
+    position: absolute;
+    left:250px;
+    top:140px;
+  }
   ul{
     font-family: 'Hind', sans-serif;
     font-size:20px;
@@ -151,17 +211,23 @@ body > :not(.pace),body:before,body:after {
 body:not(.pace-done) > :not(.pace),body:not(.pace-done):before,body:not(.pace-done):after {
   opacity:0
 }
+
     </style>
     </head>
     <body>
 <h1>WELCOME TO PAPER WORLD</h1>
-
-
-    <ul>
+<ul>
       <li><center><a class="active" href="#home">HOME</a></center></li>
       <li><center><a href="https://yui841013.github.io/Interactive2/P1/Alphabet%20page.html">ALPHABETS</a></center></li>
-      <li><center><a href="#numbers">NUMBERS</a></center></li>
+      <li><center><a href="https://yui841013.github.io/Interactive2/P1/number.html">NUMBERS</a></center></li>
     </ul>
-
+<div class="letter" id="F">
+<div class="rectangletop"></div>
+<div class="rectangleleft"></div>
+<div class="middle"></div>
+<div class="topleft"></div>
+<div id="grad3"></div>
+<div id="grad1"></div>
+</div>
     </body>
     </html>
