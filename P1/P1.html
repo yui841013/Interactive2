@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Stephanie Chou- Project 1</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+  <script src="pace.min.js"></script>
+ 
+  <style>
+
+  
+  ul{
+    font-family: 'Hind', sans-serif;
+    font-size:20px;
+}
+  body{
+    margin: 0;
+    font-family: 'Hind', sans-serif;
+  }
+h1{
+  margin:23px;
+  padding-left: 0;
+position:absolute;
+left:614px;
+top:10px
+
+
+}
+  h2{
+    margin-top: 0;
+    padding-top: 20px;
+  }
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0px;
+        width: 200px;
+        height:100vh;
+        background-color: #f4f7f6;
+        z-index: 10002;
+    }
+
+    li a {
+        display: block;
+        color: black;
+        padding: 8px 16px;
+        text-decoration: none;
+        z-index: 10002;
+    }
+
+    li a.active {
+        color: black;
+    }
+
+    li a:hover:not(.active) {
+
+        color: gray;
+    }
+
+    .pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace.pace-inactive .pace-progress {
+  display: none;
+}
+
+.pace .pace-progress {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 0;
+  height: 5rem;
+  width: 5rem;
+
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  -ms-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.pace .pace-progress:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: .5rem;
+  content: attr(data-progress-text);
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  font-size: 5rem;
+  line-height: 1;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.19999999999999996);
+}
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace.pace-inactive .pace-progress {
+  display: none;
+}
+
+.pace .pace-progress {
+  position: fixed;
+  z-index: 2000;
+  left: calc(50% - 1rem);
+  top: 40%;
+  height: 5rem;
+  width: 6rem;
+  text-align: center;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  -ms-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.pace .pace-progress:after {
+  display: block;
+  position: absolute;
+  right: 0em;
+  content: attr(data-progress-text);
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  font-size: 5rem;
+  line-height: 1;
+  text-align: center;
+  color: #7f7f7f;
+}
+
+body > :not(.pace),body:before,body:after {
+  -webkit-transition:opacity .4s ease-in-out;
+  -moz-transition:opacity .4s ease-in-out;
+  -o-transition:opacity .4s ease-in-out;
+  -ms-transition:opacity .4s ease-in-out;
+  transition:opacity .4s ease-in-out
+
+}
+
+body:not(.pace-done) > :not(.pace),body:not(.pace-done):before,body:not(.pace-done):after {
+  opacity:0
+}
+    </style>
+    </head>
+    <body>
+<h1>WELCOME TO PAPER WORLD</h1>
+
+
+    <ul>
+      <li><center><a class="active" href="#home">HOME</a></center></li>
+      <li><center><a href="#alphabets">ALPHABETS</a></center></li>
+      <li><center><a href="#numbers">NUMBERS</a></center></li>
+    </ul>
+
+    </body>
+    </html>
