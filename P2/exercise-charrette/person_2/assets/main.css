@@ -1,12 +1,12 @@
 /* reset padding and margins */
 
 * {
-	margin: 10px;
-	padding: 10px;
+	margin: 0px;
+	padding: 0px;
 }
 
 body {
-	font-family: helvetica, arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 /* container */
@@ -54,7 +54,10 @@ body {
 	background:#0074D9;
 }
 #button-2:hover{
-	transform-style: preserve-3d;
+
+	-webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
 }
 
 
@@ -82,7 +85,11 @@ body {
 background:#39CCCC;
 color: transparent;
 }
-
+#button-4:hover{
+box-shadow:1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+ -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
 /* example button 5 */
 #button-5:hover {
 	border-radius: 125px;
@@ -128,7 +135,7 @@ color: transparent;
 	background:#FFDC00;
 }
 #button-8:hover{
-	 border-radius: 50%;
+	box-shadow: inset 0 0 0 25px #53a7ea;
 }
 /*9*/
 #button-9{
@@ -153,40 +160,13 @@ color: transparent;
     background-color: yellow;
 }
 #button-12{
-	background: #85144b;
-    position: relative;
-    background-color: #4CAF50;
-    border: none;
-    font-size: 28px;
-    color: black;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    -webkit-transition-duration:0.4s; /* Safari */
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
+	background: #bf00ff;
 }
-#button-12:after {
-    content: "";
-    background: #90EE90;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px!important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
-}
-
-#button-12:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-}
+#button-12:hover{
+	 -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+    }
 /*13*/
 #button-13{
 	background: #FF4136;
@@ -205,15 +185,60 @@ color: transparent;
 	top: 0px;
 	left: 0px;
 	width: 0px;
-	height: 42px;
 	background: rgba(255,255,255,0.3);
 	border-radius: 5px;
 	transition: all 2s ease;
 }
-#button-14:hover:before {
-	width: 100%;
-} 
+
 #button-15{
 	background: #B10DC9;
+ }
+#button-15:hover{
+	transform: skewY(-20deg);
+}    
+
+#button-16{
+	background:#BE9EC9;
 }
 
+#button-16:hover{
+	transform: rotate(1000deg);
+}
+/*17*/
+#button-17{
+	background:#F1EA7F;
+}
+#button-17:hover {
+    width: 800px;
+}
+/*18*/
+#button-18{
+	background:#485167;
+	}
+#button-18:hover {
+  transform: scale(0.5, 2.5);
+}
+/*19*/
+#button-19{
+	background:#EAE6DA;
+
+}
+#button-20{
+	background:#ECDB54;
+}
+#button-21{
+	background:#EC9787;
+	
+}
+#button-22{
+	background: #004B8D;
+}
+#button-23{
+	background:#006E51;
+}
+#button-24{
+	background:#F7786B;
+}
+#button-25{
+	background:#92A8D1;
+}

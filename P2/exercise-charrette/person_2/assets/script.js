@@ -29,6 +29,6 @@ $(document).ready(function(){
 			'position' : 'absolute',
 			'top' :  yPos+'px',
 			'left' :  xPos+'px',
-		});
 	});
+		
 });
