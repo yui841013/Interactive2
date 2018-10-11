@@ -1,0 +1,219 @@
+/* reset padding and margins */
+
+* {
+	margin: 10px;
+	padding: 10px;
+}
+
+body {
+	font-family: helvetica, arial, sans-serif;
+}
+
+/* container */
+
+.container {
+	position: relative;
+}
+
+/* items */
+
+.item {
+	height: 250px;
+	width: 250px;
+	background: green;
+	color: white;
+	margin: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+	float: left; 
+	transition: all 500ms ease; 
+	cursor: pointer;
+}
+
+/* example button 1 */
+
+#button-1:hover {
+	transform: rotate(180deg) scale(2);
+	opacity: .1;
+	-webkit-filter: sepia(80%);
+    filter: sepia(100%);
+    -webkit-transition: .1s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#button-1:active {
+	background: #001f3f;
+
+}
+#button-1{
+	background: #001f3f;
+
+}
+/* example button 2 */
+#button-2{
+	background:#0074D9;
+}
+#button-2:hover{
+	transform-style: preserve-3d;
+}
+
+
+/*3*/
+#button-3{
+	background:#7FDBFF;
+}
+#button-3:after {
+	top: -100%;
+	left: 0px;
+	width: 100%;
+	position: absolute;
+	background: #3a9999;
+	border-radius: 5px;
+	content: 'Flipped';
+	transform-origin: left bottom;
+	transform: rotateX(90deg);
+}
+#button-3:hover {
+	transform-origin: center bottom;
+	transform: rotateX(-90deg) translateY(100%);
+}
+/* example button 4 */
+#button-4{
+background:#39CCCC;
+color: transparent;
+}
+
+/* example button 5 */
+#button-5:hover {
+	border-radius: 125px;
+}
+#button-5{
+	background:#3D9970;
+}
+
+/* example button 6 */
+#button-6{
+	background:#2ECC40;
+}
+#button-6:hover {
+	animation: bounce 1s;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+/*7*/
+#button-7{
+	background:#01FF70;
+}
+#button-7:hover{
+	transform: skew(-50deg);
+}
+/*8*/
+#button-8{
+	background:#FFDC00;
+}
+#button-8:hover{
+	 border-radius: 50%;
+}
+/*9*/
+#button-9{
+	background:#FF851B;
+}
+#button-9:hover {
+	border: 3px dotted #3a7999;
+	color: #3a7999;
+	background: rgba(0,0,0,0);
+}
+/*10*/
+#button-10:hover {
+	background: #FF4136;
+	transform-origin: center bottom;
+	transform: rotateX(-90deg) translateY(100%);
+}
+/*11*/
+#button-11{
+	background:#85144b;
+}
+#button-11:hover{
+    background-color: yellow;
+}
+#button-12{
+	background: #85144b;
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 28px;
+    color: black;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration:0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+#button-12:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+#button-12:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+/*13*/
+#button-13{
+	background: #FF4136;
+}
+ #button-13:hover {
+    cursor:pointer; 
+    background:url('https://media.giphy.com/media/W4a9DXIgzUcbS/giphy.gif');
+  }
+/*14*/
+#button-14{
+	background:#F012BE;
+}
+#button-14:before {
+	content:'';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	height: 42px;
+	background: rgba(255,255,255,0.3);
+	border-radius: 5px;
+	transition: all 2s ease;
+}
+#button-14:hover:before {
+	width: 100%;
+} 
+#button-15{
+	background: #B10DC9;
+}
+
