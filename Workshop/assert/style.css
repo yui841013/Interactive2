@@ -1,0 +1,24 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+   .container {
+  position: relative;
+}
+.item {
+  position:relative;
+  background: url(https://media1.tenor.com/images/704ebf58569d45e02baaba4fb6300a58/tenor.gif?itemid=8729933) center no-repeat;
+  height: 120px;
+  width: 120px;
+  margin: 10px;
+  padding: 100px;
+  box-sizing: border-box;
+  float: left; 
+  cursor: pointer;
+
+}
+
+#hidden {
+  visibility: none;
+}
+

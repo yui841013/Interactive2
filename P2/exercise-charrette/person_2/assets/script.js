@@ -5,7 +5,7 @@ $(document).ready(function(){
 			opacity: 0.4,
 			marginLeft: '125px',
 			fontSize: '24px',
-			borderWidth: '10px'
+			borderWidth: '100px'
 		}, 200 );
 	});
 
