@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Stephanie Chou- Project 3</title>
+    <iframe width="0" height="0" src="leaves.mp3" frameboarder="0" allowfullscreen></iframe>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script>
+      $(document).ready(function(){
+            //Plays the file when the mouse is over the element
+            $("background").mouseover(function (){
+              $("#song4")[0].play();
+            });
+            //Pause the file when the mouse leaves the element
+             $("background").mouseleave(function (){
+                $("#song4")[0].pause();
+            });
+    </script>
+    <style>
+   body {
+   	font-family: 'Open Sans', sans-serif;
+    color:white;
+    background: url(Waldsteig-1100x806.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+h1{
+    font-size:110px;
+    position: absolute;
+    top:28%;
+    left:20%;
+    -webkit-animation: fadein 5s;
+    letter-spacing: 0.05em;
+}
+a {
+    color: white;
+}
+audio{
+  display: none;
+}
+p{
+	position: absolute;
+	left:23%;
+	top:55%;
+	color:white;
+	width:700px;
+	z-index: 1002;
+	margin-top: 25px;
+    text-align: center;
+    font-weight:900;
+    font-size: 18px;
+
+    -webkit-animation: fadein 5s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+</style>
+ </head>
+    <body>
+    	<ul>
+  <a href="3_1.html"><h1>ANSELM KIEFER</h1></a>
+  </ul>
+  <p>Anselm Kiefer grew up in postwar West Germany amid the rubble of World War II. His newly divided country was in a state of identity crisis, lacking foundational myths or symbols untainted by the Nazis' pathological nationalism. Kiefer initially studied law to learn about codes of human behavior, fully intending to become an artist. By the 1970s, he began to develop his best-known works: massive, heavily encrusted paintings of shattered landscapes devoid of people. His art draws upon a range of traditions —including ancient Egyptian mythology, biblical stories, Jewish mysticism, and modern astronomy — in the attempt to construct a new symbolic system with broad human relevance. Kiefer is currently active in the south of France, where he has lived since 1993.</p>
+  <div class="rectangle"></div>
+  <audio id="song4" controls>
+      <source src="leaves.mp3" type="audio/mp3">
+    </audio>
+         </body>
+    </html>

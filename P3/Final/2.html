@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>March Sand</title>
+    
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script>
+      $(document).ready(function(){
+            //Plays the file when the mouse is over the element
+            $("img").mouseover(function (){
+              // var audio = $("#song1")[0];
+              // audio.play();
+              $("#song2")[0].play();
+            });
+            //Pause the file when the mouse leaves the element
+             $("img").mouseleave(function (){
+                // var audio = $("#song1")[0];
+                // audio.pause();
+                $("#song2")[0].pause();
+            });
+        });
+      </script>
+      <style>
+      audio{
+  display: none;
+}
+      body{
+      background:white;
+      font-family: 'Open Sans', sans-serif;
+      }
+      img:hover {
+  cursor: grab;
+}
+img{
+  position:absolute;
+  left:23%;
+  top:4%;
+width:900px;
+  height:600px;
+-webkit-animation: fadein 5s;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+a{
+  position:absolute;
+  left:1%;
+  bottom:1%;
+  -webkit-animation: fadein 5s;
+  color:black;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+  h5{
+  position:absolute;
+  left:3%;
+  top:9%;
+   -webkit-animation: fadein 5s;
+  }
+  h3{
+    position: absolute;
+    left:3%;
+    top:3%;
+     position:absolute;
+  color:black;
+ -webkit-animation: fadein 5s;
+  }
+  .sfmoma{
+  position: absolute;
+  right:3%;
+ top:0.5%;
+  width:auto;
+  font-size: 10px;
+}
+  </style>
+    </head>
+    <body>
+       <audio id="song2" controls>
+         <source src="river.mp3" type="audio/mp3">
+    </audio>
+      <img src="Ways- March Sand.jpg">
+       <a href="3_1.html">Back</a>
+       <h3>March Sand</h3>
+       <h5>Date created:1980 </br> 
+       Medium:oil, emulsion, shellac,
+       </br> gelatin silver print, sand, and charcoal </br>on linen</h5>
+        <div class="sfmoma">
+  <p>The Doris and Donald Fisher Collection at the San Francisco Museum of Modern Art</p>
+</div>
+     </body>
+    </html>

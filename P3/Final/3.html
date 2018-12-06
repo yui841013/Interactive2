@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Margarethe</title>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+      $(document).ready(function(){
+            //Plays the file when the mouse is over the element
+            $("img").mouseover(function (){
+              // var audio = $("#song1")[0];
+              // audio.play();
+              $("#song3")[0].play();
+            });
+            //Pause the file when the mouse leaves the element
+             $("img").mouseleave(function (){
+                // var audio = $("#song1")[0];
+                // audio.pause();
+                $("#song3")[0].pause();
+            });
+        });
+      </script>
+      <style>
+      body{
+      background:white;
+      font-family: 'Open Sans', sans-serif;
+      }
+img{
+  position:absolute;
+  left:20%;
+  top:4%;
+width:1000px;
+  height:700px;
+  z-index: 1000;
+   -webkit-animation: fadein 5s;
+}
+img:hover {
+  cursor: grab;
+}
+a{
+  position:absolute;
+  left:1%;
+  bottom:1%;
+   -webkit-animation: fadein 5s;
+   color:black;
+}
+audio{
+  display: none;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+h5{
+  position: absolute;
+  z-index: 1001;
+  left:3%;
+  top:9%;
+   -webkit-animation: fadein 5s;
+}
+h3{
+  position: absolute;
+    left:3%;
+    top:3%;
+     position:absolute;
+  color:black;
+ -webkit-animation: fadein 5s;
+}
+.sfmoma{
+  position: absolute;
+  right:3%;
+ top:0.5%;
+  width:auto;
+  font-size: 10px;
+}
+  </style>
+    </head>
+    <body>
+      <img src="Margarethe.jpg">
+       <audio id="song3" controls>
+         <source src="drygrass.mp3" type="audio/mp3">
+    </audio>
+ <a href="3_1.html">Back</a>
+ <h3>Margarethe</h3>
+ <h5>Date created:1981</br>
+medium:oil, straw, emulsion, 
+</br>and gelatin silver print on linen</h5>
+<div class="sfmoma">
+  <p>The Doris and Donald Fisher Collection at the San Francisco Museum of Modern Art</p>
+</div>
+<h5>
+    	 </body>
+    </html>

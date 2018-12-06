@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Stephanie Chou- Project 3</title>
+   
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Plays the file when the mouse is over the element
+            $("#one").mouseover(function (){
+              $("#song1")[0].play();
+            });
+            //Pause the file when the mouse leaves the element
+             $("#one").mouseleave(function (){
+                $("#song1")[0].pause();
+            });
+             $("#two").mouseover(function (){
+              $("#song2")[0].play();
+              });
+             $("#two").mouseleave(function (){
+              $("#song2")[0].pause();
+              });
+             $("#three").mouseover(function (){
+              $("#song3")[0].play();
+              });
+             $("#three").mouseleave(function (){
+                $("#song3")[0].pause();
+                });
+              });
+    </script>
+      <style>
+      body{
+      	background: black;
+        font-family: 'Open Sans', sans-serif;
+        color:white;
+        cursor: zoom-in;
+        min-height: 100vh;
+        min-width: 100vw;
+      }
+      audio { 
+   display:none;
+}
+#one{
+  position:absolute;
+  left:40%;
+  top:50%;
+  }
+  a {
+    color: black;
+    font-size: 200px;
+    position:absolute;
+  left:1%;
+  bottom:1%;
+   -webkit-animation: fadein 5s;
+}
+#two{
+  position:absolute;
+  left:90%;
+  top:30%;
+}
+#three{
+  position:absolute;
+  left:19%;
+  top:49%;
+}
+h4{
+  opacity: 0.4;
+  position: absolute;
+  left:3%;
+  top:3%;
+}
+audio{
+  display: none;
+}
+#back{
+  position:absolute;
+  left:1%;
+  bottom:1%;
+  color:white;
+  font-size: 15px;
+   -webkit-animation: fadein 5s;
+}
+  </style>
+  </head>
+<body>
+    <audio id="song1" controls>
+      <source src="dryplant.mp3" type="audio/mp3">
+    </audio>
+    <audio id="song2" controls>
+      <source src="river.mp3" type="audio/mp3">
+        </audio>
+        <audio id="song3" controls>
+      <source src="drygrass.mp3" type="audio/mp3">
+    </audio>
+ <a id="one" href="1.html">1</a>
+ <a id="two" href="2.html">2</a>
+ <a id="three" href="3.html">3</a>
+ <h4>Move your mouse and find the sound</h4>
+ <a id="back" href="homepage.html">Back</a>
+
+
+    	 </body>
+    </html>
